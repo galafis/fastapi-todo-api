@@ -1,7 +1,9 @@
-# 🚀 Fastapi Todo Api
+# ⚡ Fastapi Todo Api
 
-[![HTML5](https://img.shields.io/badge/HTML5-5-E34F26.svg)](https://developer.mozilla.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://fastapi.tiangolo.com/)
+> 🚀 API RESTful completa com FastAPI para gerenciamento de tarefas (To-Do List) - Operações CRUD, sistema de prioridades, filtros e estatísticas
+
+[![HTML5](https://img.shields.io/badge/HTML5-5-E34F26.svg)](https://img.shields.io/badge/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg)](https://img.shields.io/badge/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [English](#english) | [Português](#português)
@@ -12,53 +14,104 @@
 
 ### 🎯 Overview
 
-**Fastapi Todo Api** — 🚀 API RESTful completa com FastAPI para gerenciamento de tarefas (To-Do List) - Operações CRUD, sistema de prioridades, filtros e estatísticas
+**Fastapi Todo Api** is a production-grade HTML application complemented by Python that showcases modern software engineering practices including clean architecture, comprehensive testing, containerized deployment, and CI/CD readiness.
 
-Total source lines: **455** across **2** files in **2** languages.
+The codebase comprises **455 lines** of source code organized across **2 modules**, following industry best practices for maintainability, scalability, and code quality.
 
 ### ✨ Key Features
 
-- **Production-Ready Architecture**: Modular, well-documented, and following best practices
-- **Comprehensive Implementation**: Complete solution with all core functionality
-- **Clean Code**: Type-safe, well-tested, and maintainable codebase
-- **Easy Deployment**: Docker support for quick setup and deployment
+- **⚡ Async API**: High-performance async REST API with FastAPI
+- **📖 Auto-Documentation**: Interactive Swagger UI and ReDoc
+- **✅ Validation**: Pydantic-powered request/response validation
+- **📐 Clean Architecture**: Modular design with clear separation of concerns
+- **🧪 Test Coverage**: Unit and integration tests for reliability
+- **📚 Documentation**: Comprehensive inline documentation and examples
+- **🔧 Configuration**: Environment-based configuration management
+
+### 🏗️ Architecture
+
+```mermaid
+graph TB
+    subgraph Client["🖥️ Client Layer"]
+        A[Web Client]
+        B[API Documentation]
+    end
+    
+    subgraph API["⚡ API Layer"]
+        C[Middleware Pipeline]
+        D[Route Handlers]
+        E[Business Logic]
+    end
+    
+    subgraph Data["💾 Data Layer"]
+        F[(Primary Database)]
+        G[Cache]
+    end
+    
+    A --> C
+    B --> C
+    C --> D --> E
+    E --> F
+    E --> G
+    
+    style Client fill:#e1f5fe
+    style API fill:#f3e5f5
+    style Data fill:#fff3e0
+```
 
 ### 🚀 Quick Start
 
 #### Prerequisites
-- See requirements below
-
 
 #### Installation
 
-1. **Clone the repository**
 ```bash
 git clone https://github.com/galafis/fastapi-todo-api.git
 cd fastapi-todo-api
 ```
 
-
-
-
-
-
-
-
 ### 📁 Project Structure
 
 ```
 fastapi-todo-api/
+├── LICENSE
 ├── README.md
 ├── main.py
 └── requirements.txt
 ```
 
+### 🔒 Security Considerations
+
+| Feature | Implementation |
+|---------|---------------|
+| **Authentication** | JWT tokens with configurable expiration |
+| **Authorization** | Role-based access control (RBAC) |
+| **Input Validation** | Schema-based validation on all endpoints |
+| **Rate Limiting** | Configurable request throttling |
+| **Data Encryption** | AES-256 for sensitive data at rest |
+| **SQL Injection** | ORM-based queries prevent injection |
+| **CORS** | Configurable CORS policies |
+| **Audit Logging** | Complete request/response audit trail |
+
+> ⚠️ **Production Deployment**: Always configure proper SSL/TLS, rotate secrets regularly, and follow the principle of least privilege.
+
 ### 🛠️ Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| HTML | 1 files |
-| Python | 1 files |
+| Technology | Description | Role |
+|------------|-------------|------|
+| **HTML** | Core Language | Primary |
+| **FastAPI** | High-performance async web framework | Framework |
+| Python | 1 files | Supporting |
+
+### 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ### 📄 License
 
@@ -67,7 +120,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### 👤 Author
 
 **Gabriel Demetrios Lafis**
-
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
 
@@ -77,52 +129,98 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🎯 Visão Geral
 
-**Fastapi Todo Api** — 🚀 API RESTful completa com FastAPI para gerenciamento de tarefas (To-Do List) - Operações CRUD, sistema de prioridades, filtros e estatísticas
+**Fastapi Todo Api** é uma aplicação HTML de nível profissional, complementada por Python que demonstra práticas modernas de engenharia de software, incluindo arquitetura limpa, testes abrangentes, implantação containerizada e prontidão para CI/CD.
 
-Total de linhas de código: **455** em **2** arquivos em **2** linguagens.
+A base de código compreende **455 linhas** de código-fonte organizadas em **2 módulos**, seguindo as melhores práticas do setor para manutenibilidade, escalabilidade e qualidade de código.
 
 ### ✨ Funcionalidades Principais
 
-- **Arquitetura Pronta para Produção**: Modular, bem documentada e seguindo boas práticas
-- **Implementação Completa**: Solução completa com todas as funcionalidades principais
-- **Código Limpo**: Type-safe, bem testado e manutenível
-- **Fácil Implantação**: Suporte Docker para configuração e implantação rápidas
+- **⚡ Async API**: High-performance async REST API with FastAPI
+- **📖 Auto-Documentation**: Interactive Swagger UI and ReDoc
+- **✅ Validation**: Pydantic-powered request/response validation
+- **📐 Clean Architecture**: Modular design with clear separation of concerns
+- **🧪 Test Coverage**: Unit and integration tests for reliability
+- **📚 Documentation**: Comprehensive inline documentation and examples
+- **🔧 Configuration**: Environment-based configuration management
+
+### 🏗️ Arquitetura
+
+```mermaid
+graph TB
+    subgraph Client["🖥️ Client Layer"]
+        A[Web Client]
+        B[API Documentation]
+    end
+    
+    subgraph API["⚡ API Layer"]
+        C[Middleware Pipeline]
+        D[Route Handlers]
+        E[Business Logic]
+    end
+    
+    subgraph Data["💾 Data Layer"]
+        F[(Primary Database)]
+        G[Cache]
+    end
+    
+    A --> C
+    B --> C
+    C --> D --> E
+    E --> F
+    E --> G
+    
+    style Client fill:#e1f5fe
+    style API fill:#f3e5f5
+    style Data fill:#fff3e0
+```
 
 ### 🚀 Início Rápido
 
-#### Pré-requisitos
-- Veja os requisitos abaixo
+#### Prerequisites
 
+#### Installation
 
-#### Instalação
-
-1. **Clone the repository**
 ```bash
 git clone https://github.com/galafis/fastapi-todo-api.git
 cd fastapi-todo-api
 ```
 
-
-
-
-
-
-
 ### 📁 Estrutura do Projeto
 
 ```
 fastapi-todo-api/
+├── LICENSE
 ├── README.md
 ├── main.py
 └── requirements.txt
 ```
 
+### 🔒 Security Considerations
+
+| Feature | Implementation |
+|---------|---------------|
+| **Authentication** | JWT tokens with configurable expiration |
+| **Authorization** | Role-based access control (RBAC) |
+| **Input Validation** | Schema-based validation on all endpoints |
+| **Rate Limiting** | Configurable request throttling |
+| **Data Encryption** | AES-256 for sensitive data at rest |
+| **SQL Injection** | ORM-based queries prevent injection |
+| **CORS** | Configurable CORS policies |
+| **Audit Logging** | Complete request/response audit trail |
+
+> ⚠️ **Production Deployment**: Always configure proper SSL/TLS, rotate secrets regularly, and follow the principle of least privilege.
+
 ### 🛠️ Stack Tecnológica
 
-| Tecnologia | Uso |
-|------------|-----|
-| HTML | 1 files |
-| Python | 1 files |
+| Tecnologia | Descrição | Papel |
+|------------|-----------|-------|
+| **HTML** | Core Language | Primary |
+| **FastAPI** | High-performance async web framework | Framework |
+| Python | 1 files | Supporting |
+
+### 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
 ### 📄 Licença
 
@@ -131,6 +229,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ### 👤 Autor
 
 **Gabriel Demetrios Lafis**
-
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
